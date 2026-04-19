@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "allowJs": true,
+    "checkJs": false,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"]
+  },
+  "include": [
+    ".eslintrc.cjs",
+    "common/universal/src/**/*.ts",
+    "app/backend/src/**/*.ts",
+    "app/frontend/src/**/*.ts",
+    "app/frontend/vite.config.ts",
+    "aws-cdk/bin/**/*.ts",
+    "aws-cdk/lib/**/*.ts"
+  ]
+}

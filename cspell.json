@@ -1,0 +1,27 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "augment",
+    "augmentvir",
+    "cdk",
+    "esbuild",
+    "fastify",
+    "github",
+    "goalstream",
+    "lightmyrequest",
+    "octokit",
+    "observavir",
+    "sarangspadalkar",
+    "socketio",
+    "tsbuildinfo",
+    "typecheck",
+    "typefest",
+    "vite",
+    "webapps",
+    "webcrypto",
+    "websockets"
+  ],
+  "ignorePaths": ["node_modules", "dist", "cdk.out", "package-lock.json", ".git"],
+  "dictionaries": ["typescript", "node", "npm", "html", "css", "bash", "software-terms"]
+}
