@@ -1,0 +1,37 @@
+{
+  "name": "goal-stream",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Real-time WebSocket monorepo for GoalStream",
+  "workspaces": [
+    "common/universal",
+    "app/backend",
+    "app/frontend",
+    "aws-cdk"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "npm run build -w @goal-stream/universal && npm run typecheck --workspaces --if-present",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "spellcheck": "cspell \"**/*.{ts,tsx,js,jsx,md,json,yml,yaml}\"",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "cspell": "^8.17.5",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
+    "eslint-plugin-import": "^2.31.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3"
+  }
+}
