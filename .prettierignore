@@ -1,0 +1,10 @@
+node_modules
+dist
+cdk.out
+coverage
+package-lock.json
+.vite
+
+# Project narrative docs (keep existing formatting)
+Readme.md
+README.md
