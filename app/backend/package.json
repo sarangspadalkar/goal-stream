@@ -1,0 +1,24 @@
+{
+  "name": "@goal-stream/backend",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "@fastify/websocket": "^11.2.0",
+    "@goal-stream/universal": "0.0.0",
+    "fastify": "^5.2.1",
+    "light-my-request": "^6.0.0",
+    "portfinder": "^1.0.37",
+    "socket.io": "^4.8.1",
+    "type-fest": "^4.39.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  }
+}
